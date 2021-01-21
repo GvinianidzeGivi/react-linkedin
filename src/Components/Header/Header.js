@@ -1,16 +1,15 @@
 import React from "react";
 import "./Header.css";
-import HeaderOption from "./HeaderOption";
+import HeaderOption from "../Options/HeaderOption";
 import SearchIcon from "@material-ui/icons/Search";
 import HomeIcon from "@material-ui/icons/Home";
 import SupervisorAccountIcon from "@material-ui/icons/SupervisorAccount";
 import BusinessCenterIcon from "@material-ui/icons/BusinessCenter";
 import ChatIcon from "@material-ui/icons/Chat";
 import NotificationsIcon from "@material-ui/icons/Notifications";
-import { useSelector, useDispatch } from "react-redux";
-import { auth } from "./firebase";
-import { logout } from "./features/userSlice";
-import { selectUser } from "./features/userSlice";
+import { useDispatch } from "react-redux";
+import { auth } from "../../firebase";
+import { logout } from "../../features/userSlice";
 
 const Header = () => {
   const dispatch = useDispatch();
